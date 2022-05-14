@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" type="module"></script>
+  <title>Toastify - Hill Technologies</title>
+</head>
+
+<body>
+  <style>
+    .text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  
+  .text > p {
+    margin-left: 10px;
+  }
+  </style>
+  <div class="text">
+            <p>&copy;</p>
+            <p id="demo"></p>
+            <p><a href="https://github.com/btcChurchill?">Click here..</a></p>
+        </div>
+  <button>Show Toast</button>
+ 
+            <script>
+            const d = new Date();
+            let year = d.getFullYear();
+            document.getElementById("demo").innerHTML = year;
+    </script>
+</body>
+</html>
